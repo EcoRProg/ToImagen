@@ -2,7 +2,7 @@
 % Please edit documentation in R/listFileFormpathFileValid.R
 \name{listFileFormpathFileValid}
 \alias{listFileFormpathFileValid}
-\title{creates a existing files names list of a directory}
+\title{creates an existing files names list of a directory}
 \usage{
 listFileFormpathFileValid(pathFile)
 }
@@ -13,9 +13,5 @@ listFileFormpathFileValid(pathFile)
 TRUE or FALSE , string vector or NULL
 }
 \description{
-creates a existing files names list of a directory
-}
-\examples{
- listFile <- listFileFormpathFileValid("C:/Users/user/Documents") if(listFile[1]== TRUE){newListFile <- listFile[2]}
-
+creates an existing files names list of a directory
 }

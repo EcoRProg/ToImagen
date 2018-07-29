@@ -1,17 +1,16 @@
-#' creates a existing files names list of a directory
+#' creates an existing files names list of a directory
 #'
 #' @param pathFile : string (path)
 #'
 #' @return TRUE or FALSE , string vector or NULL
 #' @export
 #'
-#' @examples  listFile <- listFileFormpathFileValid("C:/Users/user/Documents") if(listFile[1]== TRUE){newListFile <- listFile[2]}
-#'
+#' @examples
 listFileFormpathFileValid <- function(pathFile){
   existe <- FALSE
   listFile <- NULL
 
-  listFile <- dir(path = pathFile)
+  listFile <- list.files(path = pathFile)
 
   if (length(listFile) > 0){
     existe <- TRUE
