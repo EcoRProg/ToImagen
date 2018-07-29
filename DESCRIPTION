@@ -1,0 +1,18 @@
+Package: ToImagen
+Type: Package
+Title: Report of image files
+Version: 0.0.0.9000
+Author: Who wrote it
+Authors@R: person("Daniel J.J.", "Monferran", email = "danielmfr02@yahoo.com",
+                  role = c("aut", "cre"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Report of image files. This package retrieves information from raster image files, makes reports and graphics
+Depends: R (>= 3.2.2)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+  imager (>= 0.41.1),
+  ggplot2 (>= 3.0.0),
+  graphics (>= 3.5.1)
+RoxygenNote: 6.1.0
