@@ -1,4 +1,3 @@
-
 #' creates a existing files names list of a directory
 #'
 #' @param pathFile : string (path)
