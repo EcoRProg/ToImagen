@@ -15,3 +15,8 @@ TRUE or FALSE , string vector or NULL
 \description{
 creates an existing files names list of a directory
 }
+\examples{
+pathFile <- "C:/Images"
+listFileFormpathFileValid(pathFile)
+
+}
