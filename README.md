@@ -1,7 +1,7 @@
 # ToImagen
 
-Este paquete provee de funciones que permiten obtener parámetros de una o más imágenes de typo BMP, JPG o PNG ubicadas en un directorio.
-Ofrece información de: Entropía, Desvío Estandar, Ancho, Alto.
+Este paquete provee de funciones que permiten obtener parámetros de una o más imágenes de tipo BMP, JPG o PNG ubicadas en un directorio.
+Ofrece información de: Entropía, Desvío Estándar, Ancho, Alto.
 Normalizados en escala 0 a 1 se tiene Valor máximo y Valor mínimo de intensidad de los píxeles de la imagen.
 Se pueden crear gráficos con geometría de histograma, densidad y puntos
 
