@@ -3,7 +3,7 @@
 Este paquete provee de funciones que permiten obtener parámetros de una o más imágenes de tipo BMP, JPG o PNG ubicadas en un directorio.
 Ofrece información de: Entropía, Desvío Estándar, Ancho, Alto.
 Normalizados en escala 0 a 1 se tiene Valor máximo y Valor mínimo de intensidad de los píxeles de la imagen.
-Se pueden crear gráficos con geometría de histograma, densidad y puntos
+Se pueden crear: histograma, curvas de densidad de probabilidad y gráfico de puntos
 
 
 ## Prerrequisitos
@@ -29,12 +29,15 @@ install_github("DanGit01/ToImagen")
 Para los ejemplos puede usar un grupo de imágenes de su preferencia que usted tenga disponible en una carpeta de su PC o usar las imágenes que acompañan en el paquete.
 El tipo de imágenes que pueden ser procesadas son .RGB, .JPG y .PNG con hasta tres canales (RGB)
 
+
 ### Ejemplo usando datos provenientes de una carpeta de su PC
+En un archivo .Rmd copie y pegue el siguiente código y reemplace las expresiones entre corchetes por los path y nombres de archivo existentes
 
 ```r
 require(imager) 
 require(ggplot2)
 require(graphics)
+require(ToImagen)
 
 pathFile <- <Directorio donde está el grupo de imágenes. Ej: "C:/Images">
 nameFileImag <- <Nombre de una imagen de ese directorio y su extensión. Ej: "Nube.jpg">
@@ -53,11 +56,13 @@ imgDataTable <- loadTableInfoImg(pathFileCsv, nameFileCsv)
 ```
 
 ### Ejemplo usando datos externos que provee el paquete
+En un archivo .Rmd copie y pegue el siguiente código
 
 ```r
 require(imager) 
 require(ggplot2)
 require(graphics)
+require(ToImagen)
 
 nameFileImag <- "LagoMoraine.jpg"
 allFilenameImag <- system.file("extdata", nameFileImag, package="ToImagen", mustWork = TRUE)
