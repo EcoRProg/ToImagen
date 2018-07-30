@@ -15,6 +15,16 @@ ggplot2  - versión 3.0.0  o superior
 graphics - versión 3.5.1  o superior
 
 ```
+
+## Instalación
+```r
+library(devtools)
+# Si no tiene instalado devtools, ejecute install.packages("devtools")
+install_github("DanGit01/ToImagen")
+
+```
+
+
 ## Ejemplos
 Para los ejemplos puede usar un grupo de imágenes de su preferencia que usted tenga disponible en una carpeta de su PC o usar las imágenes que acompañan en el paquete.
 El tipo de imágenes que pueden ser procesadas son .RGB, .JPG y .PNG con hasta tres canales (RGB)
@@ -30,7 +40,7 @@ pathFile <- <Directorio donde está el grupo de imágenes. Ej: "C:/Images">
 nameFileImag <- <Nombre de una imagen de ese directorio y su extensión. Ej: "Nube.jpg">
 
 pathFileCsv <- <Directorio donde se grabará el archivo con la información. Ej: "C:/scv">
-nameFileCsv <- <"Nombre del archivo. Ej: "ImgDataX.csv">
+nameFileCsv <- <Nombre del archivo. Ej: "ImgDataX.csv">
 
 infoImag <- imgInfoData(pathFile, nameFileImag)
 
