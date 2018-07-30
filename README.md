@@ -14,7 +14,7 @@ require(ggplot2)
 require(graphics)
 
 pathFile <- <Directorio donde está el grupo de imágenes. Ej: "C:/Images">
-nameFileImag = <Nombre de una imagen de ese directorio y su extensión. Ej: "Nube.jpg">
+nameFileImag <- <Nombre de una imagen de ese directorio y su extensión. Ej: "Nube.jpg">
 
 pathFileCsv <- <Directorio donde se grabará el archivo con la información. Ej: "C:/scv">
 nameFileCsv <- <"Nombre del archivo. Ej: "ImgDataX.csv">
