@@ -6,6 +6,9 @@
 #' @export
 #'
 #' @examples
+#' pathFile <- "C:/Images"
+#' listFileFormpathFileValid(pathFile)
+#'
 listFileFormpathFileValid <- function(pathFile){
   existe <- FALSE
   listFile <- NULL
