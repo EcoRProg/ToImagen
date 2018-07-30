@@ -13,6 +13,7 @@ Para poder usar este paquete debes tener instalados los siguientes paquetes:
 imager   - versión 0.41.1 o superior
 ggplot2  - versión 3.0.0  o superior
 graphics - versión 3.5.1  o superior
+stats    - versión 3.5.1  o superior
 
 ```
 
