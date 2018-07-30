@@ -29,7 +29,7 @@ imgDataTable <- loadTableInfoImg(pathFileCsv, nameFileCsv)
 
 ```
 
-## Pre requisitos
+## Prerrequisitos
 
 Para poder usar este paquete debes tener instalados los siguientes paquetes:
 ```r
