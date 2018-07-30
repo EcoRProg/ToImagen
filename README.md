@@ -6,7 +6,20 @@ Normalizados en escala 0 a 1 se tiene Valor máximo y Valor mínimo de intensida
 Se pueden crear gráficos con geometría de histograma, densidad y puntos
 
 
-## Ejemplo
+## Prerrequisitos
+
+Para poder usar este paquete debes tener instalados los siguientes paquetes:
+```r
+imager   - versión 0.41.1 o superior
+ggplot2  - versión 3.0.0  o superior
+graphics - versión 3.5.1  o superior
+
+```
+## Ejemplos
+Para los ejemplos puede usar un grupo de imágenes de su preferencia que usted tenga disponible en una carpeta de su PC o usar las imágenes que acompañan en el paquete.
+El tipo de imágenes que pueden ser procesadas son .RGB, .JPG y .PNG con hasta tres canales (RGB)
+
+### Ejemplo usando datos provenientes de una carpeta de su PC
 
 ```r
 require(imager) 
@@ -29,12 +42,31 @@ imgDataTable <- loadTableInfoImg(pathFileCsv, nameFileCsv)
 
 ```
 
-## Prerrequisitos
+### Ejemplo usando datos externos que provee el paquete
 
-Para poder usar este paquete debes tener instalados los siguientes paquetes:
 ```r
-imager   - versión 0.41.1 o superior
-ggplot2  - versión 3.0.0  o superior
-graphics - versión 3.5.1  o superior
+require(imager) 
+require(ggplot2)
+require(graphics)
+
+nameFileImag <- "LagoMoraine.jpg"
+allFilenameImag <- system.file("extdata", nameFileImag, package="ToImagen", mustWork = TRUE)
+tope <- nchar(allFilenameImag) - nchar(nameFileImag)
+pathFile <- substr(allFilenameImag, 1, tope)
+
+
+nameFileCsv <- "File_001.csv"
+allFilenameCSV <- system.file("extdata", nameFileCsv, package="ToImagen", mustWork = TRUE)
+tope <- nchar(allFilenameCSV) - nchar(nameFileCsv)
+pathFileCsv <- substr(allFilenameCSV , 1, tope)
+
+
+infoImag <- imgInfoData(pathFile, nameFileImag)
+
+imgDataFrame <- ImgAllInfoData(pathFile, pathFileCsv, nameFileCsv, TRUE, TRUE)
+
+apac <- saveTableInfoImg(pathFileCsv, nameFileCsv, imgDataFrame)
+
+imgDataTable <- loadTableInfoImg(pathFileCsv, nameFileCsv)
 
 ```
