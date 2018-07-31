@@ -1,6 +1,6 @@
 # ToImagen
 
-Este paquete provee de funciones que permiten obtener parámetros de una o más imágenes de tipo BMP, JPG o PNG ubicadas en un directorio.
+Este paquete provee de funciones que permiten obtener parámetros de una o más imágenes de formato raster; .BMP, .JPG o .PNG ubicadas en un directorio.
 Ofrece información de: Entropía, Desvío Estándar, Ancho, Alto.
 Normalizados en escala 0 a 1 se tiene Valor máximo y Valor mínimo de intensidad de los píxeles de la imagen.
 Se pueden crear: histograma, curvas de densidad de probabilidad y gráfico de puntos
@@ -28,7 +28,7 @@ install_github("DanGit01/ToImagen")
 
 ## Ejemplos
 Para los ejemplos puede usar un grupo de imágenes de su preferencia que usted tenga disponible en una carpeta de su PC o usar las imágenes que acompañan en el paquete.
-El tipo de imágenes que pueden ser procesadas son .RGB, .JPG y .PNG con hasta tres canales (RGB)
+El tipo de imágenes que pueden ser procesadas son de formato raster; .BMP, .JPG y .PNG con hasta tres canales (Ej: R,G,B)
 
 
 ### Ejemplo usando datos provenientes de una carpeta de su PC
