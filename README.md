@@ -8,16 +8,17 @@ Se pueden crear: histograma, curvas de densidad de probabilidad y gráfico de pu
 
 ## Prerrequisitos
 
-Para poder usar este paquete debes tener instalados los siguientes paquetes:
-```r
-imager   - versión 0.41.1 o superior
-ggplot2  - versión 3.0.0  o superior
-graphics - versión 3.5.1  o superior
-stats    - versión 3.5.1  o superior
+<!-- En un paquete de R los paquetes necesarios para que funcione se instalan automáticamente, y son los especificados en la seccion imports del archivo DESCRIPTION --> 
 
+Para poder usar este paquete debe tener instalado la biblioteca Cairo y la biblioteca Png utilizados por el paquete imager, en ubuntu: 
+
+```
+sudo apt-get install libcairo2-dev
+sudo apt-get install  libpng16-dev
 ```
 
 ## Instalación
+
 ```r
 library(devtools)
 # Si no tiene instalado devtools, ejecute install.packages("devtools")
